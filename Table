@@ -1,0 +1,24 @@
+class Student:
+     def getData(self, name, age, gender, id, course):
+        Student.name = name
+        Student.age = age
+        Student.gender = gender
+        Student.id = id
+        Student.course = course
+
+     def displayData(self):
+        print ("Name is: ", Student.name)
+        print ("Age is: ", Student.age)
+        print ("Gender is: ", Student.gender)
+        print ("ID number is: ", Student.id)
+        print ("Course is: ",Student.course)
+
+name = input("Enter the name: ")
+age = int(input("Enter the age: "))
+gender = input(Enter the gender: ")
+id = int(input("Enter the ID number: "))
+course = input("Enter the course: ")
+
+s1 = Student()
+s1.getData(name, age, gender, id, course)
+s1.displayData()
